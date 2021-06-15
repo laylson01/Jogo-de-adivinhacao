@@ -24,8 +24,9 @@ int main()
 
         bool acertou = chute == n_secret;
         bool maior = chute > n_secret;
-        double pontos_perdidos = abs (chute -n_secret) /2.0;
-        pontos = pontos - pontos_perdidos;
+
+        double pontos_perdidos = abs (chute - n_secret) /2.0; // CALCULO DE SISTEMA DE PONTUAÇÃO 
+        pontos = pontos - pontos_perdidos; 
 
         if (acertou)
         {
@@ -41,6 +42,7 @@ int main()
             cout << "SEU CHUTE É MENOR QUE O NÚMERO SECRETO" << endl;
         }
     }
+   
 
     cout << "FIM DE JOGO" << endl;
     cout << "VOCÊ ACERTOU O NÚMERO SECRETO EM " << tentativas << " TENTATIVAS" << endl;
