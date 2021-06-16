@@ -1,2 +1,3 @@
 # teste01
-JOGO DA ADIVINHAÇÃO
+Jogo da adivinhação!
+#Sistema de pontuação (cmplt)
