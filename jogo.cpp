@@ -50,6 +50,7 @@ int main()
         {
             cout << "PARABÉNS, VOCÊ ACERTOU!!" << endl;
             n_acertou = false;
+            break;
         }
         else if (maior)
         {
@@ -72,6 +73,6 @@ int main()
         cout << "VOCÊ ACERTOU O NÚMERO SECRETO EM " << tentativas << " TENTATIVAS" << endl;
         cout.precision(2);
         cout << fixed;
-        cout << "SUA PONTUAÇÃO = " << pontos << endl;
+        cout << "SUA PONTUAÇÃO FOI DE " << pontos << " pontos." << endl;
     }
 }
