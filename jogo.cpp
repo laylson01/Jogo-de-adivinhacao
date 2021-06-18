@@ -30,14 +30,12 @@ int main()
     }
 
     srand(time(NULL));           //Seta semente dos numeros aleatorios   // função (time(0)) conta o numero de seguros desde de 1970 (SEMPREMUDANDO)
-    int n_secret = rand() % 100; // Função randomica (aleatoria) 
-    
-    //(% RESTO DA DIVISÃO ENTRE ( 0 - 99))
-    // cout << "Número secreto: "<<n_secret << endl;
-    bool n_acertou = true;  //ENQUANTO NÃO ACERTAR ++
-    int tentativas = 0;     //TENTATIVAS
-    double pontos = 1000.0; /// SISTEMA DE PONTUAÇÃO
+    int n_secret = rand() % 100; // Função randomica (aleatoria) % 100 ( 0 - 99))
 
+    // cout << "Número secreto: "<<n_secret << endl;
+    bool n_acertou = true;
+    int tentativas = 0;
+    double pontos = 1000.0; //Pontuação
     for (tentativas = 1; tentativas <= n_de_tentativas; tentativas++)
     {
         //tentativas = tentativas +1;
@@ -62,11 +60,11 @@ int main()
         }
         else if (maior)
         {
-            cout << "SEU CHUTE É MAIOR QUE O NUMERO SECRETO" << endl;
+            cout << "Seu chute foi maior que o número secreto" << endl;
         }
         else
         {
-            cout << "SEU CHUTE É MENOR QUE O NÚMERO SECRETO" << endl;
+            cout << "Seu chute foi menor que o número secreto" << endl;
         }
     }
 
@@ -78,9 +76,9 @@ int main()
     }
     else
     {
-        cout << "VOCÊ ACERTOU O NÚMERO SECRETO EM " << tentativas << " TENTATIVAS" << endl;
+        cout << "Você acertou o número secreto em " << tentativas << " tentativas" << endl;
         cout.precision(2);
         cout << fixed;
-        cout << "SUA PONTUAÇÃO FOI DE " << pontos << " pontos." << endl;
+        cout << "Sua pontuação foi de " << pontos << " pontos." << endl;
     }
 }
