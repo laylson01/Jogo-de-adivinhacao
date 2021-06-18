@@ -13,33 +13,27 @@ int main()
 
     char dificuldade;
     cin >> dificuldade;
-
     int n_de_tentativas;
-
-    if (dificuldade == 'F')
-    {
+    if (dificuldade == 'F'){
         n_de_tentativas = 15;
     }
-    else if (dificuldade == 'M')
-    {
+    else if (dificuldade == 'M'){
         n_de_tentativas = 10;
     }
-    else
-    {
+    else{
         n_de_tentativas = 5;
     }
+    srand(time(NULL));                          //Seta semente dos numeros aleatorios   // função (time(0)) conta o numero de seguros desde de 1970 (SEMPREMUDANDO)
+    int n_secret = rand() % 100;               // Função randomica (aleatoria) % 100 ( 0 - 99))
 
-    srand(time(NULL));           //Seta semente dos numeros aleatorios   // função (time(0)) conta o numero de seguros desde de 1970 (SEMPREMUDANDO)
-    int n_secret = rand() % 100; // Função randomica (aleatoria) % 100 ( 0 - 99))
-
-    // cout << "Número secreto: "<<n_secret << endl;
+                                             // cout << "Número secreto: "<<n_secret << endl;
     bool n_acertou = true;
     int tentativas = 0;
-    double pontos = 1000.0; //Pontuação
+    double pontos = 1000.0;                //Pontuação
     for (tentativas = 1; tentativas <= n_de_tentativas; tentativas++)
     {
-        //tentativas = tentativas +1;
-        //tentativas++;
+                                        //tentativas = tentativas +1;
+                                      //tentativas++;
         int chute;
         cout << "Tentativa = " << tentativas << endl;
         cout << "Chute um número: ";
@@ -67,7 +61,7 @@ int main()
             cout << "Seu chute foi menor que o número secreto" << endl;
         }
     }
-
+    
     cout << "FIM DE JOGO" << endl;
 
     if (n_acertou)
