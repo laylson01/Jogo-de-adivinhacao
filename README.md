@@ -13,7 +13,7 @@ O jogo está dividido em três níveis: Fácil, Médio e Difícil. Quanto maior 
    - Pontuação alta se adivinhar com poucos chutes.
 
 2. **Médio:**
-   - Você tem X-2chances para adivinhar o número.
+   - Você tem X-2 chances para adivinhar o número.
    - Pontuação média se adivinhar com poucos chutes.
 
 3. **Difícil:**
